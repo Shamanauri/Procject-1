@@ -31,7 +31,13 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
   color: var(--color-dark);
+  --transition-delay: 1s;
 }
+body.dark {
+  --background-color: #333;
+  --text-color: var(--color-white);
+}
+
 img {
   width: 100%;
 }
