@@ -31,13 +31,11 @@ new Chart(chart,{
 const menuBtn = document.querySelector('#menu-btn');
 const closeBtn = document.querySelector('#close-btn');
 const sidebar = document.querySelector('aside');
+const darkmode = document.querySelector('#darkmode');
 
+darkmode.addEventListener('click',()=>{
 
-
+})
 closeBtn.addEventListener('click',() =>{
     sidebar.style.display = 'none';
-})
-
-document.querySelector('.material-symbols-sharp').addEventListener('click',() => {
-    document.body.classList.material-symbols-sharp('material-symbols-sharp')
 })
