@@ -31,11 +31,11 @@ new Chart(chart,{
 const menuBtn = document.querySelector('#menu-btn');
 const closeBtn = document.querySelector('#close-btn');
 const sidebar = document.querySelector('aside');
-const darkmode = document.querySelector('#darkmode');
 
-darkmode.addEventListener('click',()=>{
 
-})
+
+
+
 closeBtn.addEventListener('click',() =>{
     sidebar.style.display = 'none';
 })
