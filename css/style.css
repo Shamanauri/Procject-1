@@ -25,10 +25,20 @@
   --border-radius-1: 1rem;
   --border-radius-2: 6px;
 }
+/*dark theme variables*/
+.dark-theme {
+  --color-white: #131316;
+  --color-light: #23232a;
+  --color-dark: #ddd;
+  --color-gray-dark: #adacb5;
+}
+html {
+  font-size: 16px;
+}
 
 body {
   background: var(--color-light);
-  font-family: "Poppins", sans-serif;
+  font-family: poppins, sans-serif;
   min-height: 100vh;
   color: var(--color-dark);
   --transition-delay: 1s;
@@ -134,14 +144,14 @@ nav img.logo {
 nav .search-bar {
   background: var(--color-light);
   padding: var(--padding-2) var(--card-padding);
-  width: 25vw;
+  width: 22vw;
   border-radius: var(--border-radius-2);
   display: flex;
   align-items: center;
   gap: 1rem;
   color: var(--color-gray-light);
   position: absolute;
-  left: 12%;
+  left: 13%;
 }
 nav .search-bar input[type="search"] {
   color: var(--color-dark);
@@ -155,7 +165,7 @@ nav .profile-area {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 1rem;
 }
 nav .profile-area .theme-btn {
   display: flex;
@@ -164,6 +174,10 @@ nav .profile-area .theme-btn {
   height: 2rem;
   border-radius: var(--border-radius-2);
   cursor: pointer;
+}
+#menu-btn {
+  display: none;
+  background-color: white;
 }
 nav .profile-area .theme-btn span {
   width: 50%;
@@ -183,18 +197,18 @@ nav .profile-area .theme-btn .active {
 }
 nav .profile-area .profile {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
 nav .profile-area .profile-photo {
-  display: block;
+  display: flex;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   overflow: hidden;
 }
-#menu-btn {
+nav .profile-area button {
   display: none;
 }
 
